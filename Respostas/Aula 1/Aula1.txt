@@ -1,0 +1,21 @@
+1) O que são sistemas embarcados?
+
+	R: São sistemas que podem ser formados de diversas formas diferentes, utilizando hardware, software, atuadores, sensores entre outros, para realizar uma aplicação específica.
+
+2) O que são sistemas microprocessados?
+
+	R: São sistemas que utilizam microprocessadores como núcleo que realiza todo o processamento, tomada de decisões e envio e recebimento de informações contidas para a realização de uma aplicação específicia.
+
+3) Apresente aplicações de sistemas embarcados:
+
+ 	R:- Para a indústria automotiva: sensoreamento do carro (vários tipos, indicadores de combustível, vida útil do óleo), sistemas de auxílio a direção (carro que estaciona sozinho) entre vários outros
+ 	  - Para eletrodomésticos: Geladeiras com listas de compras integradas, sistemas de reconhecimento de presença em televisões, sistemas de mudança de potência em microondas.
+ 	  - Para a automação industrial: Controle de braços robóticos, monitoramento de linha de produção a fim de evitar falhas e atrasos.
+
+4) Cite arquiteturas possíveis e as diferenças entre elas
+
+	R: ARM, PowerPC, pic, AVR. Número de instruções, tamanho, preço, operações realizadas, consumo de energia, quantidade de registradores.
+
+5) Por que usamos o raspebrry PI na disciplina, ao invés de outro system on chip?
+	
+	R: Custo benefício em relação a desempenho de processamento e preço, grande aplicabilidade, produto difundido e de facil acesso no mercado, facilidade de conexão via wi-fi, hdmi, portas USB e pinos GPio.
