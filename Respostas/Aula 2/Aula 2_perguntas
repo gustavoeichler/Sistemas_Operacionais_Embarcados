@@ -1,0 +1,72 @@
+1)Escreva o texto "Ola mundo cruel!" em um arquivo denominado "Ola_mundo.txt". Apresente o conteúdo deste arquivo no terminal.
+
+R:	echo Ola mundo cruel! > Ola_mundo.txt
+	cat Ola_mundo.txt
+
+2)Apresente o nome de todos os arquivos e pastas na pasta 'root'.
+
+R:	cd root
+	ls
+
+3)Apresente o tipo de todos os arquivos e pastas na pasta 'root'.
+
+R:	cd root
+	ls -la
+	
+
+4)Apresente somente as pastas dentro da pasta 'root'.
+
+R:	cd root
+	ls -d */
+
+5)Descubra em que dia da semana caiu o seu aniversário nos últimos dez anos.
+
+R:	date -d 04/27/2009
+	date -d 04/27/2010
+	date -d 04/27/2011
+	date -d 04/27/2012
+	date -d 04/27/2013
+	date -d 04/27/2014
+	date -d 04/27/2015
+	date -d 04/27/2016
+	date -d 04/27/2017
+	date -d 04/27/2018
+
+Para as questões a seguir, use a pasta no endereço https://github.com/DiogoCaetanoGarcia/Sistemas_Embarcados/raw/master/Questoes/02_Intro_Linux_arqs.zip
+
+7)Liste somente os arquivos com extensão .txt.
+
+R:	cd Arqs_aula_02/
+	ls *.txt
+
+
+8)Liste somente os arquivos com extensão .png.
+
+R:	cd Arqs_aula_02/
+	ls *.png
+
+9)Liste somente os arquivos com extensão .jpg.
+
+R:	cd Arqs_aula_02/
+	ls *.jpg
+
+10)Liste somente os arquivos com extensão .gif.
+
+R:	cd Arqs_aula_02/
+	ls *.gif
+
+11)Liste somente os arquivos que contenham o nome 'cal'.
+
+R:	cd Arqs_aula_02/
+	ls cal*
+
+12)Liste somente os arquivos que contenham o nome 'tux'.
+
+R:	cd Arqs_aula_02/
+	ls *tux*
+
+13)Liste somente os arquivos que comecem com o nome 'tux'.
+
+R:	cd Arqs_aula_02/
+	ls tux*
+
