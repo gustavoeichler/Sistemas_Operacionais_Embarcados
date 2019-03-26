@@ -70,3 +70,5 @@ R:	cd Arqs_aula_02/
 R:	cd Arqs_aula_02/
 	ls tux*
 
+fim
+
