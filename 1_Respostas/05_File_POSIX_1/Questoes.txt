@@ -11,14 +11,27 @@ fp = fopen ("nomedoarquivo", flag de opção);
 fclose(fp);
 
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
+função: fwrite
+
+prototipo:
+size_t fwrite(void *ptr, size_t, n_obj, FILE* );
 
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
+função fread
+
+prototipo:
+size_t fread(void* ptr, size_t, n_obj, FILE*)
 
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
+função: fseek
+
+prototipo: int fseek(FILE*, offset, int_origem);
 
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+#include<stdio.h>
 
 2. O que é a norma POSIX?
+
 R: É uma norma definida pelo IEEE para a manutenção da interoperabilidade entre sistemas.
 
 3. Considerando a norma POSIX, responda:
@@ -40,6 +53,9 @@ int A = write(fid, &endBuffer, numerodebytesparaescrever);
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
 função: read
 
+prototipo:
+ssize_t read  (int fd, void *buf, size_t count);
+
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
 função: lseek
 
@@ -47,3 +63,4 @@ prototipo:
 off_t lseek(int fd, número de bytes de offset, int whence);
 
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+#include <unistd.h>
