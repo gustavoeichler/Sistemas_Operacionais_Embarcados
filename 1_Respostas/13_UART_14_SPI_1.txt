@@ -1,0 +1,19 @@
+1-Cite as vantagens e desvantagens das comunicação serial:
+(a) Assíncrona (UART).
+	R: Vantegens: Usa apenas dois cabos, controle da transmissão e recepção sem clock, transmissão full duplex.
+	   Desvantagens: Tamanho de palavra limitado, baixa velocidade de transferência e não suporta muitos escravos.
+(b) SPI.
+	R: Vantagens: Tamanho de palavra flexível, não tem clock limitado, possui potencial para velocidades elevadas de transmissão, suporta muitos escravos.
+	   Desvantagens: Utiliza muitos pinos, apenas um mestre é suportado, sem protocolo de integridade do sinal.
+
+2-Considere o caso em que a Raspberry Pi deve receber leituras analógico/digitais de um MSP430, e que a comunicação entre os dois é UART. É tecnicamente possível que o MSP430 mande os resultados da conversão A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por quê?
+	R: Sim. Como a transmissão é feita por um fio e a recepção é feito por outro fio, ao chegar um bit para o mestre (raspberry) já fica subentendido que a comunicação deve ser iniciada.
+
+3-Considere o caso em que a Raspberry Pi deve receber leituras analógico/digitais de um MSP430, que a comunicação entre os dois seja SPI, e que o MSP430 seja o escravo. É tecnicamente possível que o MSP430 mande os resultados da conversão A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um pedido ao MSP430? Por quê?
+	R: Não. A comunicação depende do clock para ser iniciada, portanto o escravo deve esperar o pedido do mestre para enviar os dados.
+ 
+4-Se o Raspberry Pi tiver de se comunicar com dois dispositivos via UART, como executar a comunicação com o segundo dispositivo?
+	R:
+
+5-Se o Raspberry Pi tiver de se comunicar com dois dispositivos via SPI, como executar a comunicação com o segundo dispositivo?
+	R:
