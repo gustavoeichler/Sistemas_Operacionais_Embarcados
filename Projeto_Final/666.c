@@ -26,7 +26,7 @@ int main(){
     {   
         //O código aqui dentro será executado no processo filho
         printf("pid do Filho: %d\n", getpid());
-         system("aseqdump -p 14:0");
+         system("./aseqdump -p 14:0");
         
     }
     else
