@@ -1,15 +1,48 @@
-Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+1-Escreva um código em C para gerar uma onda quadrada de 1 Hz em um pino GPIO do Raspberry Pi.
+	R: 
+#include <wiringPi.h>
+#include <unistd.h>
 
-	Como o projeto utilizará Wi-Fi para enviar os comandos para as lâmpadas, o raspberry pi3B foi o escolhido por já possuir suporte nativo wi-fi.
 
-Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
-
-	Ubuntu mate por que possui suporte a diversos programas que serão utilizados como Jackd2 e midish.
-
-Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e forneça os links necessários para isto.
+int main(){
 	
-	Instalação via SD card, seguindo o passo a passo fornecido no site: https://ubuntu-mate.org/raspberry-pi/
+	int pin = 7;	
+	if(wiringPiSetup()== -1)
+		return -1;
 
-Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.
+	while(1){
+	pinMode(pin, OUTPUT);
+	digitalWrite(pin, LOW);
+	usleep(500000);
+	digitalWrite(pin, HIGH);
+	usleep(500000);
+	}
 
-	Os códigos serão escritos em C, utilzando shell script para realizar o controle das lampadas enviando os dados através do comando nc (netcat)
+	return 0;
+
+s
+2-Generalize o código acima para qualquer frequência possível.
+	R:
+int main(){
+	
+	int pin = 7;	//pino 7  na wiringPi é o GPIO4
+	float f = 0, t = 0;
+	if(wiringPiSetup()== -1)
+		return -1;
+	printf("Escolha uma frequência:\n");
+	scanf("%f", &f);
+
+	t = 1000000*(1/(2*f));
+
+	while(1){
+		pinMode(pin, OUTPUT);
+		digitalWrite(pin, LOW);
+		usleep(t);
+		digitalWrite(pin, HIGH);
+		usleep(t);
+	}
+
+	return 0;
+}
+
+3-Crie dois processos, e faça com que o processo-filho gere uma onda quadrada, enquanto o processo-pai lê um botão no GPIO, aumentando a frequência da onda sempre que o botão for pressionado. A frequência da onda quadrada deve começar em 1 Hz, e dobrar cada vez que o botão for pressionado. A frequência máxima é de 64 Hz, devendo retornar a 1 Hz se o botão for pressionado novamente.

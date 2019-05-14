@@ -1,0 +1,15 @@
+Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+
+	Como o projeto utilizará Wi-Fi para enviar os comandos para as lâmpadas, o raspberry pi3B foi o escolhido por já possuir suporte nativo wi-fi.
+
+Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+
+	Ubuntu mate por que possui suporte a diversos programas que serão utilizados como Jackd2 e midish.
+
+Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e forneça os links necessários para isto.
+	
+	Instalação via SD card, seguindo o passo a passo fornecido no site: https://ubuntu-mate.org/raspberry-pi/
+
+Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.
+
+	Os códigos serão escritos em C, utilzando shell script para realizar o controle das lampadas enviando os dados através do comando nc (netcat)
