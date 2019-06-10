@@ -17,7 +17,20 @@ void Musica2(){
 	printf("%s", comando);
 	system(comando); 
 }  
-
+void Musica3(){
+	sprintf(comando,"aplaymidi -p14 MSM.mid") ;
+	printf("%s", comando);
+	system(comando); 
+}  
+void Musica4(){
+	sprintf(comando,"aplaymidi -p14 Teste.mid") ;
+	printf("%s", comando);
+	system(comando); 
+}  void Musica5(){
+	sprintf(comando,"aplaymidi -p14 Teste2.mid") ;
+	printf("%s", comando);
+	system(comando); 
+}  
 
 int main(){
 	pid_t musica_pid;
