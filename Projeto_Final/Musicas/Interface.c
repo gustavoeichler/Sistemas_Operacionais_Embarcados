@@ -22,7 +22,16 @@ void Musica2(){
 	printf("%s", comando);
 	system(comando); 
 }  
-
+void Musica3(){
+	sprintf(comando,"aplaymidi -p14 MSM.mid") ;
+	printf("%s", comando);
+	system(comando); 
+}  
+void Musica4(){
+	sprintf(comando,"aplaymidi -p14 Teste.mid") ;
+	printf("%s", comando);
+	system(comando); 
+}  
 int main(){
 
 	int i;
@@ -38,6 +47,14 @@ int main(){
 	}	if(i==2){
 		
 		Musica2();
+
+	}	if(i==3){
+		
+		Musica3();
+
+	}	if(i==4){
+		
+		Musica4();
 
 	}
 	
