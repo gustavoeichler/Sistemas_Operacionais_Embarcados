@@ -48,13 +48,25 @@ int main(){
 	printf("Digite o número da musica para tocar:\n");
 	scanf("%d",&i);
 	printf("%d",i);
-	if(i==1){
+		if(i==1){
+			
 		Musica1();
-	
 	
 	}	if(i==2){
 		
 		Musica2();
+
+	}	if(i==3){
+		
+		Musica3();
+
+	}	if(i==4){
+	
+		Musica4();
+
+	}	if(i==5){
+		
+		Musica5();
 
 	}
 	
