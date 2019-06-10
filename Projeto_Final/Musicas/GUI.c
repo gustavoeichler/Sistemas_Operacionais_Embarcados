@@ -45,7 +45,7 @@ int main(){
 	system("aconnect -l");
 	printf("Lista de musicas para tocar:\n");
 	system("cat Lista_musica.txt");
-	printf("Digite o número da musica para tocar:\n");
+	printf("Digite o numero da musica para tocar:\n");
 	scanf("%d",&i);
 	printf("%d",i);
 		if(i==1){
