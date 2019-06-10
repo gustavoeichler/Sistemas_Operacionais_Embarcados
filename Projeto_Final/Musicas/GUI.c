@@ -31,7 +31,7 @@ int main(){
 	system("aconnect 14 129");
 	system("aconnect -l");
 	printf("Lista de musicas para tocar:\n");
-	system("ls *.mid");
+	system("cat Lista_musica.txt");
 	printf("Digite o número da musica para tocar:\n");
 	scanf("%d",&i);
 	printf("%d",i);
