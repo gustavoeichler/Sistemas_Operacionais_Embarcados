@@ -36,7 +36,7 @@ int main(){
 
 	int i;
 	
-	printf("Lista de músicas para tocar\n 1- elise \n 2-Metronome \n") ;
+	printf("Lista de músicas para tocar\n 1- elise \n 2- Metronome \n 3- MSM \n 4- Teste") ;
 	printf("Digite o número da música para tocar:\n");
 	scanf("%d",&i);
 	printf("%d",i);
