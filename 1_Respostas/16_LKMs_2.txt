@@ -1,0 +1,24 @@
+1) O que é memória virtual?
+	R: É a utilização do espaço disponível no HD para aumentar a quantidade de memória RAM disponível para rodar novos processos, aumentando a capacidade do sistema.
+ 
+2) Qual é a diferença entre o user space e o kernel space?
+	R: A memória RAM é dividida em 2 partes, o user spcae  e o kernel space. O user space é o conjunto de locais disponíveis para que os processos de usuários rodem normalmente. O kernel space é um espaço dedicado ao sistema para rodar o kernel, quando ocorre uma chamada de função do sistema por um processo, uma interrupção é enviada ao kernel para rodar a chada de sistema.
+3) Qual é a diferença de acesso à memória virtual entre o user space e o kernel space?
+
+4)Em termos práticos, por que é feita esta distinção entre user space e kernel space?
+	R: Para distinguir uma localização de acesso geral, de uma localização de acesso dedicado.
+
+5)Qual é a diferença entre Linux e GNU/Linux?
+	R: Linux é o sistema operacional rodando um kernel clone do UNIX. GNU/Linux é um sistema operacional com o kernel linux modificado em relação ao UNIX original da década de 70 e 80.
+
+6)O que é um Linux Kernel Module (LKM)? Quais são suas vantagens?
+	R: É um arquivo que contém um exemplo de kernel de um sistema operacional. Sem módulos do kernel carregáveis, um sistema operacional teria que incluir toda a funcionalidade antecipada possível já compilada diretamente no kernel base. Grande parte dessa funcionalidade residiria na memória sem ser usada, desperdiçando memória e exigiria que os usuários reconstruíssem e reinicializassem o kernel base toda vez que exigissem nova funcionalidade. A maioria dos sistemas operacionais que suportam módulos carregáveis ??do kernel incluirá módulos para suportar a funcionalidade mais desejada.
+
+7)O que são device drivers?
+	R: É uma função que permite conectar de forma adequada dispositivos, permitindo que eles se comuniquem e operem de forma correta. A comunicação entre o kernel e um hardware.
+
+8)Cite uma situação prática em que vale a pena desenvolver um device driver.
+	R:
+
+9)O que é a General Public License (GPL)? Quais são suas características?
+	R: É uma licensa de software. Essa licensa permite a distribuição de um programa de forma livre desde que as condições de copyright sejam mantidas.
