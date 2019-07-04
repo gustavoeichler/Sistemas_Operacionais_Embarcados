@@ -6,14 +6,14 @@ id=$1
 ip=$(grep -i $1 listaip | awk -F, '{print $2}')
 
 
-#Comandos: On, Off, Cor, tempo de transição (ms)
+#Comandos: On, Off, Cor, tempo de transiÃ§Ã£o (ms)
 
 comando=$2
 tempo=$3
 
 case $comando in
 "on")
- printf "{\"id\":$1,\"method\":\"set_power\",\"params\":[\"on\",\"sudden\",$tempo]}\r\n" |timeout 0.05 nc $ip 55443
+ printf "{\"id\"%:1,\"method\":\"set_power\",\"params\":[\"on\",\"sudden\",$tempo]}\r\n" |timeout 0.05 nc $ip 55443
  ;;
 "off")
  printf "{\"id\":$1,\"method\":\"set_power\",\"params\":[\"off\",\"smooth\",$tempo]}\r\n" |timeout 0.05 nc $ip 55443
